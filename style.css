@@ -1,0 +1,141 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #a445ed;
+  --gray: #777;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --gray: #999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  display: flex;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  background: #eef;
+}
+
+.search-bar button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.word {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.word h2 {
+  font-size: 32px;
+}
+
+.word .phonetic {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.meaning {
+  margin-top: 20px;
+}
+
+.meaning h3 {
+  color: var(--accent);
+  text-transform: lowercase;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.word-of-day {
+  margin-top: 30px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--accent);
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
