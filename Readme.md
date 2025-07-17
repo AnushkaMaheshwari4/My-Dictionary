@@ -31,7 +31,7 @@ It includes features like real-time search, theme toggle (dark/light), font swit
 
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![light](./Image/Screenshot%202025-07-17%20224236.jpg) | ![dark](./Image/PRODESK%20SS1.jpgImage/PRODESK SS1.jpg) |
+| ![light](./Image/Screenshot%202025-07-17%20224236.jpg) | ![dark](./Image/PRODESK%20SS1.jpg) |
 
 ---
 
